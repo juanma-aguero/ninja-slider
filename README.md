@@ -1,0 +1,4 @@
+ninja-slider
+============
+
+Jquery Slider
