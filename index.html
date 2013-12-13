@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ninja Slider</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="icon" type="image/png" href="img/ninja-152415_640.png" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" >
+        <link rel="stylesheet" href="css/ninjasldr.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>       
+        <script src="js/jquery.ninjasldr.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    <img src="img/ninja-152415_640.png" width="50">
+                    Ninja Slider
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <button class="btn btn-primary btn-block"><i class="glyphicon glyphicon-arrow-left"></i></button>
+                </div>
+                <div class="col-xs-8 ninja-sldr" id="mySlider">
+                    <img src="img/iguana-223157_640.jpg" />
+                    <img src="img/japan-227290_640.jpg" />
+                    <img src="img/usb-building-227558_640.jpg"/>
+                </div>
+                <div class="col-xs-2">
+                    <button class="btn btn-primary btn-block"><i class="glyphicon glyphicon-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="row ninja-sldr-fire">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">
+                    <div class="col-xs-4">
+                        <a data-ninja="img/iguana-223157_640.jpg" href="#" class="thumbnail">
+                            <img src="img/iguana-223157_640.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a data-ninja="img/japan-227290_640.jpg" href="#" class="thumbnail">
+                            <img src="img/japan-227290_640.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a data-ninja="img/usb-building-227558_640.jpg" href="#" class="thumbnail">
+                            <img src="img/usb-building-227558_640.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <hr/>
+            <div class="row">
+                <span>Juan Manuel Aguero</span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $("#mySlider").ninjaSlider({
+                speed: 5000,
+                loop: true,
+                switchSelector: ".ninja-sldr-fire a"
+            });
+        </script>
+    </body>
+</html>

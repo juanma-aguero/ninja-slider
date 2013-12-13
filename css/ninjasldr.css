@@ -1,0 +1,19 @@
+/* 
+    Document   : slider
+    Created on : Sep 20, 2012, 4:05:40 PM
+    Author     : juanma
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.ninja-sldr{
+    height: 280px;
+    overflow: hidden;
+    padding: 0px;
+}
+.ninja-sldr img{
+    position: absolute;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
