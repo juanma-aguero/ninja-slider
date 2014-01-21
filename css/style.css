@@ -1,15 +1,41 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : Dec 12, 2013, 8:34:23 PM
     Author     : Juan Manuel Agüero <jaguero@flowcode.com.ar>
 */
 
 #mySlider{
-    height: 400px;
+    height: 426px;
     box-shadow: 0px 0px 20px black;
     margin-bottom: 10px;
+}
+
+.dot-container{
+    position: absolute; 
+    z-index: 10; 
+    bottom: 0px; 
+    text-align: center;
+    width: 100%;
+}
+
+.dot{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #5C6763;
+}
+
+.one{
+    background-image: url('../img/iguana-223157_640.jpg');
+}
+.two{
+    background-image: url('../img/japan-227290_640.jpg');
+}
+.three{
+    background-image: url('../img/usb-building-227558_640.jpg');
 }

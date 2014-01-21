@@ -7,7 +7,7 @@
 */
 
 .ninja-sldr{
-    height: 280px;
+    height: 426px;
     overflow: hidden;
     padding: 0px;
 }
@@ -16,4 +16,38 @@
     width: 100%;
     padding: 0px;
     margin: 0px;
+}
+.ninja-sldr-async-slider{
+    position: relative;
+    left: 0px;
+    height: 426px;
+    width: 1920px;
+}
+.ninja-sldr-slide{
+    width: 640px;
+    height: 426px;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+.ninja-sldr-slide-1level{
+    float: right;
+    position: relative;
+    right: -100px;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+}
+.ninja-sldr-slide-2level{
+    float: right;
+    position: relative;
+    right: -100px;
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+}
+
+.ninja-sldr-slide-2level-fromright{
+    right: 0px;
 }
